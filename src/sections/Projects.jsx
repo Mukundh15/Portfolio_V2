@@ -8,37 +8,70 @@ const projects = [
   {
     name: "LFPortal",
     problem:
-      "Built a secure Lost & Found reporting system to help users post, track, and recover items using image-based listings and role-based access.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Cloudinary"],
+      "Built a secure Lost & Found reporting system with role-based access control, image-based listings via Cloudinary, and JWT authentication — reducing item recovery time for campus users.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Cloudinary", "JWT"],
     github: "https://github.com/Mukundh15/LFPortal",
     live: "https://lfportal.netlify.app/",
+    highlights: ["Role-based access", "Image uploads", "Secure auth"],
   },
   {
     name: "StayEasy",
     problem:
-      "Solved the problem of discovering, listing, and managing short-term stays by building a full-stack accommodation platform with authentication, image uploads, and secure sessions.",
-    tech: ["EJS", "Node.js", "Express", "MongoDB", "Cloudinary"],
+      "Full-stack Airbnb-style accommodation platform with user authentication, Cloudinary image uploads, session management, and CRUD operations for property listings.",
+    tech: ["EJS", "Node.js", "Express", "MongoDB", "Cloudinary", "Passport.js"],
     github: "https://github.com/Mukundh15/StayEasy",
     live: "https://stayeasy-vjvt.onrender.com/listings",
+    highlights: ["Auth system", "Cloud storage", "MVC architecture"],
+  },
+  {
+    name: "Real-Time Chat App",
+    problem:
+      "Developed a real-time messaging application with instant message delivery, online user status, and typing indicators using WebSocket technology.",
+    tech: ["React", "Spring Boot", "WebSocket","MongoDB"],
+    github: "https://github.com/Mukundh15/chat-web-usign-springboot",
+    highlights: ["Real-time messaging", "WebSockets"],
+  },
+  {
+    name: "More Projects",
+    problem:
+      "Built 10+ full-stack projects including college websites, club portals, REST APIs, and database-driven applications. Explore my GitHub for the complete collection.",
+    tech: ["MERN", "Flask", "Next.js", "PostgreSQL", "Firebase"],
+    github: "https://github.com/Mukundh15?tab=repositories",
+    highlights: ["10+ projects", "Various tech stacks", "Open source"],
   },
 ];
 
 const Projects = () => {
   const { theme } = useTheme();
   const [repoCount, setRepoCount] = useState(null);
+  const [statsLoaded, setStatsLoaded] = useState(true);
 
-  // 🔹 Fetch GitHub repo count
+  const githubStatsUrl =
+    theme === "dark"
+      ? `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=dark&hide_border=true&rank_icon=github`
+      : `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=default&hide_border=true&rank_icon=github`;
+
+  // Fetch GitHub repo count
   useEffect(() => {
     const fetchRepoCount = async () => {
       try {
         const res = await fetch(
-          `https://api.github.com/users/${GITHUB_USERNAME}`
+          `https://api.github.com/users/${GITHUB_USERNAME}`,
+          {
+            headers: {
+              Accept: "application/vnd.github+json",
+              "User-Agent": "portfolio-app",
+            },
+          }
         );
+
+        if (!res.ok) throw new Error("GitHub API failed");
+
         const data = await res.json();
         setRepoCount(data.public_repos);
       } catch (err) {
         console.error("GitHub API error:", err);
-        setRepoCount(null);
+        setRepoCount("—");
       }
     };
 
@@ -56,9 +89,7 @@ const Projects = () => {
 
         {/* HEADER */}
         <div className="text-center mb-24">
-          <h2 className="text-5xl md:text-6xl font-extrabold">
-            Projects
-          </h2>
+          <h2 className="text-5xl md:text-6xl font-extrabold">Projects</h2>
           <p
             className={`mt-6 text-lg max-w-2xl mx-auto ${
               theme === "dark" ? "text-zinc-400" : "text-gray-600"
@@ -92,8 +123,8 @@ const Projects = () => {
                 {project.problem}
               </p>
 
-              {/* Tech */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((t) => (
                   <span
                     key={t}
@@ -108,7 +139,24 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Links */}
+              {/* Key Features */}
+              {project.highlights && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.highlights.map((h) => (
+                    <span
+                      key={h}
+                      className={`text-xs px-2 py-1 rounded-md font-medium ${
+                        theme === "dark"
+                          ? "bg-cyan-500/20 text-cyan-400 border border-cyan-500/30"
+                          : "bg-blue-100 text-blue-700 border border-blue-200"
+                      }`}
+                    >
+                      ✓ {h}
+                    </span>
+                  ))}
+                </div>
+              )}
+
               <div className="flex gap-6 text-sm font-medium">
                 <a
                   href={project.github}
@@ -136,11 +184,8 @@ const Projects = () => {
 
         {/* GITHUB ACTIVITY */}
         <div className="max-w-5xl mx-auto">
-
-          {/* Top Row */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-10">
-
-            {/* Profile */}
+          {/* Header - always visible */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
             <a
               href={`https://github.com/${GITHUB_USERNAME}`}
               target="_blank"
@@ -151,15 +196,12 @@ const Projects = () => {
               github.com/{GITHUB_USERNAME}
             </a>
 
-            {/* Repo Count (Dynamic) */}
             <div className="flex items-center gap-4">
               <span className="text-xl font-semibold">
-                {repoCount !== null
-                  ? `${repoCount} Repositories`
-                  : "Repositories"}
+                {repoCount !== null ? `${repoCount} Repositories` : "Repositories"}
               </span>
               <div
-                className={`h-px w-24 ${
+                className={`hidden sm:block h-px w-24 ${
                   theme === "dark" ? "bg-zinc-700" : "bg-gray-300"
                 }`}
               />
@@ -167,23 +209,40 @@ const Projects = () => {
 
           </div>
 
-          {/* Streak Card */}
-          <div
-            className={`rounded-2xl border p-6 ${
-              theme === "dark"
-                ? "bg-zinc-900 border-zinc-800"
-                : "bg-gray-50 border-gray-200"
-            }`}
-          >
-            <img
-              src={`https://github-readme-streak-stats.herokuapp.com?user=${GITHUB_USERNAME}&theme=${
-                theme === "dark" ? "dark" : "light"
-              }&hide_border=true`}
-              alt="GitHub streak"
-              className="mx-auto"
-            />
-          </div>
-
+          {statsLoaded ? (
+            /* Stats Image - show if loaded */
+            <div
+              className={`rounded-2xl border p-6 ${
+                theme === "dark"
+                  ? "bg-zinc-900 border-zinc-800"
+                  : "bg-gray-50 border-gray-200"
+              }`}
+            >
+              <img
+                src={githubStatsUrl}
+                alt="GitHub stats"
+                className="mx-auto w-full max-w-md"
+                loading="lazy"
+                onError={() => setStatsLoaded(false)}
+              />
+            </div>
+          ) : (
+            /* Fallback Card - show only if stats fails */
+            <a
+              href={`https://github.com/${GITHUB_USERNAME}`}
+              target="_blank"
+              rel="noreferrer"
+              className={`block text-center p-8 rounded-2xl border transition hover:-translate-y-1 ${
+                theme === "dark"
+                  ? "bg-zinc-900/60 border-zinc-800 hover:border-cyan-500/50"
+                  : "bg-gray-50 border-gray-200 hover:border-blue-400"
+              }`}
+            >
+              <p className={`text-lg ${theme === "dark" ? "text-zinc-300" : "text-gray-700"}`}>
+                Check out my contributions and projects on GitHub →
+              </p>
+            </a>
+          )}
         </div>
       </div>
     </section>

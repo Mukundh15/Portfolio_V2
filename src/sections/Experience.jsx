@@ -23,7 +23,7 @@ const Experience = () => {
               theme === "dark" ? "text-zinc-400" : "text-gray-600"
             }`}
           >
-            Currently seeking internship opportunities while strengthening real-world skills
+            Professional experience and leadership roles that shaped my journey
           </p>
           <div className="mt-6 mx-auto h-1 w-20 bg-blue-500 rounded-full" />
         </div>
@@ -60,9 +60,32 @@ const Experience = () => {
             Worked as a Software Developer Intern focusing on backend and full-stack
             development. Built and optimized REST APIs using Flask and MongoDB,
             and contributed to frontend features using React.js and Next.js.
-            This experience helped me understand real project workflows,
-            backend efficiency, and production-level code practices.
           </p>
+
+          {/* KEY ACHIEVEMENTS */}
+          <div className="mt-6">
+            <h4 className={`font-semibold mb-3 ${theme === "dark" ? "text-zinc-200" : "text-gray-800"}`}>
+              Key Contributions:
+            </h4>
+            <ul className={`space-y-2 ${theme === "dark" ? "text-zinc-300" : "text-gray-700"}`}>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-500 mt-1">▹</span>
+                Developed and optimized RESTful APIs improving response efficiency
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-500 mt-1">▹</span>
+                Built responsive UI components using React.js and Next.js
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-500 mt-1">▹</span>
+                Collaborated in agile workflows with production-level code practices
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-cyan-500 mt-1">▹</span>
+                Integrated MongoDB for efficient data storage and retrieval
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Leadership & Community */}
@@ -84,7 +107,7 @@ const Experience = () => {
             <RoleCard
               title="PR Lead"
               org="Google Developer Groups On Campus (GDGOC)"
-              linkedin="linkedin.com/company/gdg-bvrit"
+              linkedin="https://www.linkedin.com/in/gdg-on-campus-bvrit/"
               instagram="https://www.instagram.com/gdgc.bvritn"
               theme={theme}
             />

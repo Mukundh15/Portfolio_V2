@@ -40,8 +40,18 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto text-center">
 
         {/* Heading */}
+        <span
+          className={`inline-block mb-4 px-4 py-1.5 rounded-full text-sm font-medium ${
+            theme === "dark"
+              ? "bg-green-500/20 text-green-400 border border-green-500/30"
+              : "bg-green-100 text-green-700 border border-green-200"
+          }`}
+        >
+          🟢 Open to Opportunities
+        </span>
+
         <h2 className="text-3xl md:text-4xl font-bold">
-          Let’s Connect
+          Let's Build Something Together
         </h2>
 
         <p
@@ -49,7 +59,15 @@ const Contact = () => {
             theme === "dark" ? "text-zinc-400" : "text-gray-600"
           }`}
         >
-          Open to internships, full-time roles, and collaborations
+          Looking for SDE / Full Stack Developer roles • Available to start immediately
+        </p>
+
+        <p
+          className={`mt-2 text-base ${
+            theme === "dark" ? "text-zinc-500" : "text-gray-500"
+          }`}
+        >
+          📍 India • Open to Remote & On-site
         </p>
 
         {/* Social Icons */}

@@ -5,17 +5,26 @@ import { useTheme } from "../context/ThemeContext";
 const programming = [
   { icon: "devicon-java-plain colored", label: "Java" },
   { icon: "devicon-javascript-plain colored", label: "JavaScript" },
+  { icon: "devicon-typescript-plain colored", label: "TypeScript" },
   { icon: "devicon-python-plain colored", label: "Python" },
   { icon: "devicon-c-plain colored", label: "C" },
 ];
 
-const webTech = [
-  { icon: "devicon-html5-plain colored", label: "HTML" },
-  { icon: "devicon-css3-plain colored", label: "CSS" },
-  { icon: "devicon-tailwindcss-original colored", label: "Tailwind" },
-  { icon: "devicon-react-original colored", label: "React" },
+const frontend = [
+  { icon: "devicon-react-original colored", label: "React.js" },
+  { icon: "devicon-nextjs-plain", label: "Next.js" },
+  { icon: "devicon-html5-plain colored", label: "HTML5" },
+  { icon: "devicon-css3-plain colored", label: "CSS3" },
+  { icon: "devicon-tailwindcss-original colored", label: "Tailwind CSS" },
+  { icon: "devicon-bootstrap-plain colored", label: "Bootstrap" },
+  { icon: "devicon-redux-original colored", label: "Redux" },
+];
+
+const backend = [
   { icon: "devicon-nodejs-plain colored", label: "Node.js" },
-  { icon: "devicon-express-original colored", label: "Express" },
+  { icon: "devicon-express-original", label: "Express.js" },
+  { icon: "devicon-flask-original", label: "Flask" },
+  { icon: "devicon-socketio-original", label: "Socket.io" },
 ];
 
 const databases = [
@@ -24,12 +33,22 @@ const databases = [
   { icon: "devicon-postgresql-plain colored", label: "PostgreSQL" },
 ];
 
-const tools = [
+const devops = [
   { icon: "devicon-git-plain colored", label: "Git" },
-  { icon: "devicon-github-original colored", label: "GitHub" },
+  { icon: "devicon-github-original", label: "GitHub" },
   { icon: "devicon-docker-plain colored", label: "Docker" },
+  { icon: "devicon-amazonwebservices-plain-wordmark colored", label: "AWS" },
+  { icon: "devicon-linux-plain", label: "Linux" },
+];
+
+const tools = [
+  { icon: "devicon-vscode-plain colored", label: "VS Code" },
   { icon: "devicon-postman-plain colored", label: "Postman" },
+  { icon: "devicon-figma-plain colored", label: "Figma" },
+  { icon: "devicon-npm-original-wordmark colored", label: "npm" },
   { icon: "devicon-netlify-plain colored", label: "Netlify" },
+  { icon: "devicon-vercel-original", label: "Vercel" },
+  { icon: "devicon-render-plain", label: "Render" },
   { icon: "devicon-firebase-plain colored", label: "Firebase" },
 ];
 
@@ -62,9 +81,11 @@ const Skills = () => {
         </div>
 
         <SkillSection title="Programming Languages" data={programming} />
-        <SkillSection title="Web Technologies" data={webTech} />
+        <SkillSection title="Frontend Development" data={frontend} />
+        <SkillSection title="Backend Development" data={backend} />
         <SkillSection title="Databases" data={databases} />
-        <SkillSection title="Tools & Deployment" data={tools} />
+        <SkillSection title="DevOps & Cloud" data={devops} />
+        <SkillSection title="Tools & Platforms" data={tools} />
 
       </div>
     </section>

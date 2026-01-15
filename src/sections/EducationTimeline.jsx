@@ -42,7 +42,7 @@ const EducationTimeline = () => {
           </span>
 
           <h2 className="mt-4 text-5xl md:text-6xl font-extrabold">
-            Educations
+            Education
           </h2>
 
           <p

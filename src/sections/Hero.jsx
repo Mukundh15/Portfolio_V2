@@ -78,18 +78,18 @@ const Hero = () => {
               theme === "dark" ? "text-zinc-400" : "text-gray-600"
             }`}
           >
-            I build scalable, production-ready web applications using{" "}
-            <span className="font-medium">MERN</span>,{" "}
-            <span className="font-medium">Cloud</span>, and{" "}
-            <span className="font-medium">modern web technologies</span>.
+            I build <span className="font-semibold">scalable web applications</span> with
+            clean code and modern tools. Passionate about{" "}
+            <span className="font-semibold">React, Node.js, and MongoDB</span> —
+            also experienced in Flask, Next.js & Cloud deployment.
           </p>
 
           {/* STATS */}
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto md:mx-0">
             {[
-              { label: "Projects", value: "10+" },
-              { label: "Stack", value: "MERN" },
-              { label: "Focus", value: "Full Stack" },
+              { label: "Projects Built", value: "10+" },
+              { label: "Available", value: "Immediately" },
+              { label: "Core Stack", value: "MERN" },
             ].map((item) => (
               <div
                 key={item.label}

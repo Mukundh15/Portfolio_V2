@@ -85,6 +85,47 @@ const About = () => {
           </div>
 
         </div>
+
+        {/* RECRUITER CTA BANNER */}
+        <div
+          className={`mt-16 rounded-2xl p-8 text-center border-2 border-dashed ${
+            theme === "dark"
+              ? "border-cyan-500/50 bg-cyan-500/5"
+              : "border-blue-500/50 bg-blue-50"
+          }`}
+        >
+          <p className="text-xl font-semibold mb-2">
+            🎯 Actively seeking SDE / Full Stack Developer roles
+          </p>
+          <p className={theme === "dark" ? "text-zinc-400" : "text-gray-600"}>
+            Internship completed • 10+ projects built • Available to join immediately
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
+            <a
+              href="#contact"
+              className={`px-6 py-2 rounded-full font-medium transition ${
+                theme === "dark"
+                  ? "bg-cyan-500 text-black hover:bg-cyan-400"
+                  : "bg-blue-600 text-white hover:bg-blue-500"
+              }`}
+            >
+              Contact Me
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              download
+              className={`px-6 py-2 rounded-full font-medium transition border ${
+                theme === "dark"
+                  ? "border-cyan-500 text-cyan-400 hover:bg-cyan-500/10"
+                  : "border-blue-500 text-blue-600 hover:bg-blue-50"
+              }`}
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
