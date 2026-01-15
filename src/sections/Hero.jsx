@@ -88,7 +88,7 @@ const Hero = () => {
           <div className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto md:mx-0">
             {[
               { label: "Projects Built", value: "10+" },
-              { label: "Available", value: "Immediately" },
+              { label: "Available", value: "Now" },
               { label: "Core Stack", value: "MERN" },
             ].map((item) => (
               <div

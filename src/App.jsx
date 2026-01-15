@@ -1,16 +1,38 @@
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
+import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
 import PillNavbar from "./component/PillNavbar";
 import Home from "./Pages/Home";
 import Footer from "./component/Footer";
+import Loader from "./component/Loader";
+
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <ThemeProvider>
-      <PillNavbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer/>
+      <AnimatePresence mode="wait">
+        {loading && <Loader key="loader" />}
+      </AnimatePresence>
+
+      {!loading && (
+        <>
+          <PillNavbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </ThemeProvider>
   );
 };

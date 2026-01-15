@@ -34,14 +34,14 @@ const PillNavbar = () => {
     <>
       {/* Desktop Navbar */}
       <div
-        className={`fixed top-5 left-1/2 -translate-x-1/2 z-[70] hidden md:block transition-all duration-300
+        className={`fixed top-5 left-1/2 -translate-x-1/2 z-[70] hidden lg:block transition-all duration-300
         ${showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}`}
       >
         <SlideTabs />
       </div>
 
       {/* Mobile Hamburger */}
-      <div className="fixed top-5 left-5 z-[70] md:hidden">
+      <div className="fixed top-5 left-5 z-[70] lg:hidden">
         <HamburgerButton
           open={mobileMenuOpen}
           setOpen={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -50,7 +50,7 @@ const PillNavbar = () => {
       </div>
 
       {/* Mobile Theme Toggle */}
-      <div className="fixed top-5 right-5 z-[70] md:hidden">
+      <div className="fixed top-5 right-5 z-[70] lg:hidden">
         <button
           onClick={toggleTheme}
           className={`p-3 rounded-full backdrop-blur ${
@@ -70,7 +70,7 @@ const PillNavbar = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className={`fixed inset-0 z-[60] backdrop-blur flex items-center justify-center md:hidden ${
+            className={`fixed inset-0 z-[60] backdrop-blur flex items-center justify-center lg:hidden ${
               theme === "dark" ? "bg-zinc-950/90" : "bg-white/95"
             }`}
           >
