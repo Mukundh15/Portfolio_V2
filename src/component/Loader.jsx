@@ -10,11 +10,8 @@ const Loader = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className="fixed inset-0 z-[100] flex items-center justify-center bg-zinc-950 overflow-hidden"
     >
-      {/* Subtle Background Glow */}
       <div className="absolute w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl" />
-
       <div className="relative flex flex-col items-center">
-        {/* Animated Letters */}
         <div className="flex">
           {letters.map((letter, i) => (
             <motion.span
@@ -32,8 +29,6 @@ const Loader = () => {
             </motion.span>
           ))}
         </div>
-
-        {/* Underline Animation */}
         <motion.div
           initial={{ scaleX: 0, opacity: 0 }}
           animate={{ scaleX: 1, opacity: 1 }}

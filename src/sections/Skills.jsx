@@ -1,7 +1,5 @@
 import { useTheme } from "../context/ThemeContext";
 
-/* ================= DATA ================= */
-
 const programming = [
   { icon: "devicon-java-plain colored", label: "Java" },
   { icon: "devicon-javascript-plain colored", label: "JavaScript" },
@@ -48,11 +46,9 @@ const tools = [
   { icon: "devicon-npm-original-wordmark colored", label: "npm" },
   { icon: "devicon-netlify-plain colored", label: "Netlify" },
   { icon: "devicon-vercel-original", label: "Vercel" },
-  { icon: "devicon-render-plain", label: "Render" },
   { icon: "devicon-firebase-plain colored", label: "Firebase" },
 ];
 
-/* ================= COMPONENT ================= */
 
 const Skills = () => {
   const { theme } = useTheme();
@@ -60,33 +56,29 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className={`py-36 px-6 ${
+      className={`py-14 sm:py-24 px-3 sm:px-6 ${
         theme === "dark" ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
       <div className="max-w-7xl mx-auto">
-
-        {/* HEADER */}
-        <div className="text-center mb-28">
-          <h2 className="text-5xl md:text-6xl font-extrabold">
+        <div className="text-center mb-10 sm:mb-20">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold">
             Skills
           </h2>
           <p
-            className={`mt-6 text-lg max-w-xl mx-auto ${
+            className={`mt-3 sm:mt-6 text-base sm:text-lg max-w-xl mx-auto ${
               theme === "dark" ? "text-zinc-400" : "text-gray-600"
             }`}
           >
             Practical skills built through real-world projects and internships
           </p>
         </div>
-
         <SkillSection title="Programming Languages" data={programming} />
         <SkillSection title="Frontend Development" data={frontend} />
         <SkillSection title="Backend Development" data={backend} />
         <SkillSection title="Databases" data={databases} />
         <SkillSection title="DevOps & Cloud" data={devops} />
         <SkillSection title="Tools & Platforms" data={tools} />
-
       </div>
     </section>
   );
@@ -94,24 +86,21 @@ const Skills = () => {
 
 export default Skills;
 
-/* ================= SUB COMPONENTS ================= */
-
 const SkillSection = ({ title, data }) => (
-  <div className="mb-28">
-    <h3 className="text-center text-3xl md:text-4xl font-semibold mb-16">
+  <div className="mb-10 sm:mb-20">
+    <h3 className="text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-12">
       {title}
     </h3>
-
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-20 gap-y-16 place-items-center">
+    <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-12 gap-y-6 sm:gap-y-8 md:gap-y-12 place-items-center">
       {data.map((skill, i) => (
         <div
           key={i}
-          className="flex flex-col items-center gap-4 group"
+          className="flex flex-col items-center gap-2 sm:gap-4 group"
         >
           <i
-            className={`${skill.icon} text-6xl md:text-7xl transition-transform duration-300 group-hover:scale-110`}
+            className={`${skill.icon} text-4xl sm:text-6xl md:text-7xl transition-transform duration-300 group-hover:scale-110`}
           />
-          <span className="text-sm md:text-base font-medium tracking-wide opacity-80">
+          <span className="text-xs sm:text-sm md:text-base font-medium tracking-wide opacity-80">
             {skill.label}
           </span>
         </div>

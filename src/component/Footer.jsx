@@ -11,7 +11,6 @@ const sections = [
   "Contact",
 ];
 
-// smooth scroll helper
 const scrollToSection = (id) => {
   const el = document.getElementById(id.toLowerCase());
   if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -29,23 +28,15 @@ const Footer = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6">
-
-        {/* Created By (TOP) */}
         <div className="pt-10 pb-4 text-center text-xs tracking-widest uppercase">
           Created by Mukundh
         </div>
-
-        {/* Divider */}
         <div
           className={`h-px w-full ${
             theme === "dark" ? "bg-zinc-800" : "bg-gray-200"
           }`}
         />
-
-        {/* Footer Content */}
         <div className="py-8 flex flex-col gap-6">
-
-          {/* Footer Navigation */}
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
             {sections.map((section) => (
               <button
@@ -57,8 +48,6 @@ const Footer = () => {
               </button>
             ))}
           </nav>
-
-          {/* Social Links */}
           <div className="flex justify-center gap-6 text-lg">
             <a
               href="https://github.com/Mukundh15"
@@ -80,8 +69,6 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
-
-          {/* Copyright */}
           <div className="text-center text-xs">
             © {new Date().getFullYear()} Dubasi Mukundh. All rights reserved.
           </div>

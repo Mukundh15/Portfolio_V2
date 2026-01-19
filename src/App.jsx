@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import PillNavbar from "./component/PillNavbar";
+import Navbar from "./component/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./component/Footer";
 import Loader from "./component/Loader";
@@ -26,7 +26,7 @@ const App = () => {
 
       {!loading && (
         <>
-          <PillNavbar />
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
