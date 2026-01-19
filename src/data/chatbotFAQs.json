@@ -1,0 +1,346 @@
+[
+    {
+        "keys": ["hi", "hello", "hey", "hii", "yo", "namaste", "namaskaram", "vanakkam", "namaskara", "salaam"],
+        "a": "Hello 👋 Welcome to Mukundh’s portfolio! You can ask me about his skills, projects, or experience."
+    },
+    {
+        "keys": ["good morning", "good afternoon", "good evening", "subhodayam", "suprabhat", "kaalai vanakkam"],
+        "a": "Hello 😊 Hope you're having a great day! Feel free to explore Mukundh’s work."
+    },
+    {
+        "keys": ["how are you", "how r u", "how are you doing", "ela unnaru", "kaise ho", "epdi iruka"],
+        "a": "I'm doing great 😄 Thanks for asking! I'm here to help you explore Mukundh’s portfolio."
+    },
+    {
+        "keys": ["what's up", "wassup", "em chestunnav", "kya chal raha hai"],
+        "a": "All good here 😄 Let me know if you'd like to know about Mukundh’s skills or projects."
+    },
+    {
+        "keys": ["who are you", "what are you", "meeru evaru", "tum kaun ho", "neenga yaar"],
+        "a": "I’m a smart portfolio chatbot built to help visitors explore Mukundh’s work easily."
+    },
+    {
+        "keys": ["who made you", "who created you", "ninnu evaru chesaru", "kisne banaya"],
+        "a": "I was designed and developed by Mukundh as part of his portfolio project 😊"
+    },
+    {
+        "keys": ["are you ai", "are you real", "nuvvu ai aa", "tum robot ho"],
+        "a": "I’m a virtual assistant 🤖 created using React to guide visitors through the portfolio."
+    },
+    {
+        "keys": ["help", "what can you do", "options", "help me"],
+        "a": "I can tell you about Mukundh’s skills, projects, experience, resume, and contact details."
+    },
+    {
+        "keys": ["what should i ask", "what to ask", "em adagali"],
+        "a": "You can ask about Mukundh’s skills, projects, internships, or how to contact him."
+    },
+    {
+        "keys": ["resume", "cv"],
+        "a": "You can find Mukundh’s resume in the portfolio or request it via the contact section."
+    },
+    {
+        "keys": ["job", "hire", "internship", "hiring", "job kavali"],
+        "a": "Mukundh is open to internships and developer roles. Feel free to contact him!"
+    },
+    {
+        "keys": ["experience", "fresher", "experience unda"],
+        "a": "Mukundh has strong hands-on experience through multiple real-world projects."
+    },
+    {
+        "keys": ["college", "education", "chaduvu"],
+        "a": "Mukundh is currently pursuing engineering and actively building industry-level projects."
+    },
+    {
+        "keys": ["nice", "good", "awesome", "cool", "great", "super"],
+        "a": "Thank you! 😊 Mukundh put a lot of effort into building this portfolio."
+    },
+    {
+        "keys": ["thank you", "thanks", "thx", "dhanyavad", "thanks bro"],
+        "a": "You're very welcome 😄 Feel free to ask anything else."
+    },
+    {
+        "keys": ["love you", "i love you", "love u"],
+        "a": "😊 That’s very kind! I’m here to help you explore Mukundh’s work."
+    },
+    {
+        "keys": ["stupid", "idiot", "dumb", "useless"],
+        "a": "😅 I’m here to help! You can ask me about Mukundh’s skills or projects instead."
+    },
+    {
+        "keys": ["bad", "worst", "boring"],
+        "a": "I’m always improving 😊 Let me know how I can help you better!"
+    },
+    {
+        "keys": ["fuck", "shit", "bitch"],
+        "a": "😅 Let’s keep it professional. You can ask me about Mukundh’s work anytime."
+    },
+    {
+        "keys": ["random", "idk", "nothing"],
+        "a": "No worries 😄 You can ask me about Mukundh’s projects, skills, or experience."
+    },
+    {
+        "keys": ["bye", "goodbye", "see you", "bye bye", "vellostha"],
+        "a": "Goodbye 👋 Thanks for visiting Mukundh’s portfolio. Have a great day!"
+    },
+    {
+    "keys": ["kaise ho", "kaisa hai", "sab theek"],
+    "a": "Main bilkul theek hoon 😄 Aap Mukundh ke skills ya projects ke baare mein pooch sakte ho."
+    },
+    {
+    "keys": ["mee peru", "nee peru enti"],
+    "a": "Naa peru Mukundh 😊 Nenu mee portfolio assistant ni."
+    },
+    {
+    "keys": ["epdi iruka", "epdi irruka"],
+    "a": "Naan nalla iruken 😄 Neenga Mukundh oda projects pathi ketkalaam."
+    },
+    {
+    "keys": ["hegiddira", "hegiddeera"],
+    "a": "Nanu chennagiddini 😄 Mukundh projects bagge kelbahudu."
+    },
+    {
+    "keys": ["entha vishesham", "em undi"],
+    "a": "Anni bagunnayi 😄 Mukundh portfolio gurinchi adagandi."
+    },
+    {
+    "keys": ["kya kar rahe ho", "kya chal raha"],
+    "a": "Main Mukundh ka portfolio explain kar raha hoon 😄 Aap kya jaan na chahoge?"
+    },
+    {
+    "keys": ["bro", "bhai", "anna", "akka"],
+    "a": "😄 Haan bolo! Mukundh ke projects ya skills ke baare mein pooch sakte ho."
+    },
+    {
+    "keys": ["set bro", "super bro", "mast"],
+    "a": "😄 Thank you! Mukundh ne is portfolio par kaafi mehnat ki hai."
+    },
+    {
+    "keys": ["nee skills enti", "nee projects enti"],
+    "a": "Mukundh MERN Stack developer hai aur real-world projects banata hai."
+    },
+    {
+    "keys": ["tum kya karte ho"],
+    "a": "Main Mukundh ka portfolio bot hoon, jo uske skills aur projects batata hai."
+    },
+    {
+    "keys": ["where are you from", "where do you live"],
+    "a": "Mukundh India se hai aur full-stack development par kaam kar raha hai."
+    },
+    {
+    "keys": ["how old are you"],
+    "a": "😄 Main ek bot hoon, lekin Mukundh ek engineering student hai."
+    },
+    {
+    "keys": ["can you help me"],
+    "a": "Bilkul! 😊 Aap Mukundh ke skills, projects ya contact ke baare mein pooch sakte ho."
+    },
+    {
+    "keys": ["thank you so much", "thanks a lot"],
+    "a": "You're most welcome 😄 Happy to help!"
+    },
+    {
+    "keys": ["bye bro", "see you later"],
+    "a": "Bye 👋 Phir milenge! Mukundh ke portfolio visit karne ke liye thanks."
+    },
+    {
+    "keys": ["హాయ్", "హలో", "నమస్తే", "నమస్కారం"],
+    "a": "నమస్తే 👋 ముకుంద్ పోర్ట్‌ఫోలియోకు స్వాగతం! మీకు ఎలా సహాయం చేయగలను?"
+    },
+    {
+    "keys": ["మీరు ఎలా ఉన్నారు", "ఎలా ఉన్నారు"],
+    "a": "నేను బాగున్నాను 😄 మీకు ఎలా సహాయం చేయగలను?"
+    },
+    {
+    "keys": ["మీ పేరు ఏమిటి", "నీ పేరు ఏమిటి"],
+    "a": "నా పేరు ముకుంద్ 😊 నేను ఈ పోర్ట్‌ఫోలియోకు సహాయకుడిని."
+    },
+    {
+    "keys": ["మీరు ఎవరు", "నీవెవరు"],
+    "a": "నేను ముకుంద్ పోర్ట్‌ఫోలియో కోసం తయారుచేసిన చాట్‌బాట్‌ని."
+    },
+    {
+    "keys": ["మీరు ఏమి చేస్తారు"],
+    "a": "నేను ముకుంద్ స్కిల్స్, ప్రాజెక్ట్స్ మరియు వివరాలు చెబుతాను."
+    },
+    {
+    "keys": ["ధన్యవాదాలు", "థ్యాంక్స్"],
+    "a": "మీకు స్వాగతం 😄 ఇంకేమైనా సహాయం కావాలా?"
+    },
+    {
+    "keys": ["బై", "వెళ్తాను"],
+    "a": "బై 👋 మళ్లీ కలుద్దాం! పోర్ట్‌ఫోలియో చూసినందుకు ధన్యవాదాలు."
+    },
+
+    {
+    "keys": ["नमस्ते", "हैलो"],
+    "a": "नमस्ते 👋 मुकुंद के पोर्टफोलियो में आपका स्वागत है!"
+    },
+    {
+    "keys": ["आप कैसे हो"],
+    "a": "मैं ठीक हूँ 😄 आपकी कैसे मदद कर सकता हूँ?"
+    },
+    {
+    "keys": ["आप कौन हो"],
+    "a": "मैं मुकुंद का पोर्टफोलियो चैटबॉट हूँ।"
+    },
+    {
+    "keys": ["धन्यवाद"],
+    "a": "आपका स्वागत है 😄"
+    },
+    {
+    "keys": ["अलविदा"],
+    "a": "अलविदा 👋 फिर मिलेंगे!"
+    },
+
+    {
+    "keys": ["வணக்கம்", "ஹலோ"],
+    "a": "வணக்கம் 👋 முகுந்தின் போர்ட்ஃபோலியோவுக்கு வரவேற்கிறேன்!"
+    },
+    {
+    "keys": ["நீங்கள் எப்படி இருக்கிறீர்கள்"],
+    "a": "நான் நன்றாக இருக்கிறேன் 😄 உங்களுக்கு எப்படி உதவலாம்?"
+    },
+    {
+    "keys": ["நீங்கள் யார்"],
+    "a": "நான் முகுந்தின் போர்ட்ஃபோலியோ உதவியாளர்."
+    },
+    {
+    "keys": ["நன்றி"],
+    "a": "நன்றி 😄 மீண்டும் சந்திப்போம்!"
+    },
+
+    {
+    "keys": ["ನಮಸ್ಕಾರ", "ಹಲೋ"],
+    "a": "ನಮಸ್ಕಾರ 👋 ಮುಖುಂದ್ ಅವರ ಪೋರ್ಟ್‌ಫೋಲಿಯೊಗೆ ಸ್ವಾಗತ!"
+    },
+    {
+    "keys": ["ನೀವು ಹೇಗಿದ್ದೀರಾ"],
+    "a": "ನಾನು ಚೆನ್ನಾಗಿದ್ದೇನೆ 😄 ನಿಮಗೆ ಹೇಗೆ ಸಹಾಯ ಮಾಡಲಿ?"
+    },
+    {
+    "keys": ["ನೀವು ಯಾರು"],
+    "a": "ನಾನು ಮುಖುಂದ್ ಅವರ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಬಾಟ್."
+    },
+    {
+    "keys": ["ಧನ್ಯವಾದಗಳು"],
+    "a": "ಧನ್ಯವಾದಗಳು 😄 ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ!"
+    },
+
+    {
+    "keys": ["നമസ്കാരം", "ഹലോ"],
+    "a": "നമസ്കാരം 👋 മുഖുന്ദിന്റെ പോർട്ട്ഫോളിയിലേക്ക് സ്വാഗതം!"
+    },
+    {
+    "keys": ["സുഖമാണോ"],
+    "a": "എനിക്ക് സുഖമാണ് 😄 നിങ്ങളെ എങ്ങനെ സഹായിക്കാം?"
+    },
+    {
+    "keys": ["നീ ആരാണ്"],
+    "a": "ഞാൻ മുഖുന്ദിന്റെ പോർട്ട്ഫോളിയോ ബോട്ടാണ്."
+    },
+    {
+    "keys": ["നന്ദി"],
+    "a": "നന്ദി 😄 വീണ്ടും കാണാം!"
+    },
+    {
+    "keys": ["certifications", "any certifications", "do you have certifications"],
+    "a": "Yes, I have completed multiple technical certifications related to web development, JavaScript, and full-stack development."
+    },
+    {
+    "keys": ["experience", "work experience", "any experience"],
+    "a": "I have hands-on experience through multiple real-world projects, internships, and self-driven development work."
+    },
+    {
+    "keys": ["internship experience", "internships"],
+    "a": "Yes, I have worked on internships where I gained practical experience in full-stack development and real-world problem solving."
+    },
+    {
+    "keys": ["projects details", "tell me about your projects"],
+    "a": "I have built projects like LFPortal, StayEasy, and AI-based applications involving authentication, databases, APIs, and deployment."
+    },
+    {
+    "keys": ["tech stack", "technology stack", "tools you use"],
+    "a": "My tech stack includes React, Node.js, Express, MongoDB, JavaScript, Tailwind CSS, Git, GitHub, and REST APIs."
+    },
+    {
+    "keys": ["backend skills", "backend experience"],
+    "a": "I have strong backend experience using Node.js, Express, MongoDB, authentication, APIs, and database design."
+    },
+    {
+    "keys": ["frontend skills", "frontend experience"],
+    "a": "I work with React, Tailwind CSS, responsive UI design, component-based architecture, and modern frontend practices."
+    },
+    {
+    "keys": ["database", "databases you know"],
+    "a": "I have worked with MongoDB and understand schema design, CRUD operations, and database optimization."
+    },
+    {
+    "keys": ["api", "rest api", "apis"],
+    "a": "Yes, I have built RESTful APIs for authentication, CRUD operations, and data handling."
+    },
+    {
+    "keys": ["deployment", "hosting", "where hosted"],
+    "a": "I have experience deploying applications using platforms like Render, Vercel, and cloud-based hosting."
+    },
+    {
+    "keys": ["github", "github profile", "code"],
+    "a": "You can find my GitHub profile linked in the portfolio where I’ve shared all my major projects."
+    },
+    {
+    "keys": ["problem solving", "coding skills"],
+    "a": "I regularly practice problem-solving and focus on writing clean, efficient, and maintainable code."
+    },
+    {
+    "keys": ["teamwork", "team player"],
+    "a": "Yes, I have experience working in teams, collaborating with developers, and following best practices."
+    },
+    {
+    "keys": ["communication skills"],
+    "a": "I communicate clearly, document my work, and collaborate effectively with team members."
+    },
+    {
+    "keys": ["strengths"],
+    "a": "My strengths include fast learning, consistency, problem-solving, and building complete applications."
+    },
+    {
+    "keys": ["weakness"],
+    "a": "I focus on improving every day and constantly work on refining my skills and knowledge."
+    },
+    {
+    "keys": ["why should we hire you"],
+    "a": "I bring strong technical skills, hands-on project experience, and a strong willingness to learn and grow."
+    },
+    {
+    "keys": ["career goals", "future goals"],
+    "a": "My goal is to become a skilled full-stack developer and work on impactful real-world applications."
+    },
+    {
+    "keys": ["availability", "when can you join"],
+    "a": "I am available to start immediately or as per the organization’s requirements."
+    },
+    {
+    "keys": ["remote", "work from home"],
+    "a": "Yes, I am comfortable working remotely as well as in-office environments."
+    },
+    {
+    "keys": ["learning new tech", "adaptability"],
+    "a": "I enjoy learning new technologies and quickly adapt to new tools and frameworks."
+    },
+    {
+    "keys": ["testing", "debugging"],
+    "a": "I perform debugging, error handling, and testing to ensure stable and reliable applications."
+    },
+    {
+    "keys": ["security", "authentication"],
+    "a": "I have implemented authentication, authorization, and basic security practices in my projects."
+    },
+    {
+    "keys": ["final year", "student"],
+    "a": "Yes, I am currently a student and actively building projects alongside my academics."
+    },
+    {
+    "keys": ["contact details", "email"],
+    "a": "You can contact me at mukundhdubasi9@gmail.com or through the portfolio contact section."
+    }
+]

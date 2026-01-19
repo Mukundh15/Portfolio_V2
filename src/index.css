@@ -1,3 +1,18 @@
+/* Hide vertical scrollbar for chat messages area */
+.chat-scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+.chat-scrollbar-hide {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+html, body {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+	display: none;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

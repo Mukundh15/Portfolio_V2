@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "./component/Navbar";
 import Home from "./Pages/Home";
 import Footer from "./component/Footer";
+import Chatbot from "./component/Chatbot";
 import Loader from "./component/Loader";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
           </Routes>
           <Footer />
+          <Chatbot />
         </>
       )}
     </ThemeProvider>

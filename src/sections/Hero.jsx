@@ -74,7 +74,7 @@ const Hero = () => {
             I build <span className="font-semibold">scalable web applications</span> with
             clean code and modern tools. Passionate about{" "}
             <span className="font-semibold">React, Node.js, and MongoDB</span> —
-            also experienced in Flask, Next.js & Cloud deployment.
+            also experienced in Flask & Cloud deployment.
           </p>
 
           <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-3 sm:gap-6 max-w-md mx-auto md:mx-0">
@@ -115,7 +115,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.instagram.com/mukundh_15/"
+              href="https://www.instagram.com/dubasimukundh/"
               target="_blank"
               rel="noreferrer"
               className={`text-2xl transition ${
@@ -141,7 +141,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="mailto:mukundhdubasi@gmail.com"
+              href="mailto:mukundhdubasi9@gmail.com"
               className={`text-2xl transition ${
                 theme === "dark"
                   ? "text-zinc-400 hover:text-red-400"

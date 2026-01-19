@@ -10,7 +10,7 @@ const programming = [
 
 const frontend = [
   { icon: "devicon-react-original colored", label: "React.js" },
-  { icon: "devicon-nextjs-plain", label: "Next.js" },
+  // { icon: "devicon-nextjs-plain", label: "Next.js" },
   { icon: "devicon-html5-plain colored", label: "HTML5" },
   { icon: "devicon-css3-plain colored", label: "CSS3" },
   { icon: "devicon-tailwindcss-original colored", label: "Tailwind CSS" },
